@@ -116,6 +116,6 @@ h1,h2{
     }
 
     .header-title-sub {
-        display: none;
+        /* display: none; */
     }
 }
