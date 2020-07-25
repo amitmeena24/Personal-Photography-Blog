@@ -17,7 +17,6 @@
     grid-gap: 0.2rem;
     background-size: cover;
     background-position: bottom;
-    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
     position: relative;
     grid-template-areas:
         "header header"
