@@ -9,7 +9,7 @@
     background-color: #9e2929;
     background-size: cover;
     background-position: bottom;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
     position: relative;
 }
 
@@ -88,7 +88,7 @@ h1,h2{
 
     .header-title-sub {
         font-size: 1rem;
-        /* display: none; */
+        display: none;
     }
 
     .header-title-main {
