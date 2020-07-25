@@ -1,0 +1,85 @@
+/* imports */
+
+@import "components/header_style.css";
+@import "components/general_style.css";
+@import "components/welcome_text_style.css";
+@import "components/sidebar_style.css";
+@import "components/footer_style.css";
+
+
+/* grid container settings */
+
+.grid-main {
+    display: grid;
+    grid-template-rows: 88vh 34vh max-content min-content;
+    grid-template-columns: 60% 40%;
+    grid-gap: 0.2rem;
+    grid-template-areas:
+        "header header"
+        "welcome-text sidebar"
+        "blog-posts blog-posts"
+        "footer footer";
+}
+
+@media only screen and (max-width: 900px) {
+
+    .grid-main {
+        display: grid;
+        grid-template-rows: 80vh min-content min-content min-content max-content;
+        grid-template-columns: 100%;
+        grid-gap: 0.2rem;
+        grid-template-areas:
+            "header"
+            "welcome-text"
+            "sidebar"
+            "blog-posts"
+            "footer";
+    }
+}
+
+/* blog post cards sections */
+
+.grid-blog-posts {
+    margin-top: 18px;
+    grid-area: blog-posts;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.blog-posts {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    flex-basis: 28%;
+    flex-grow: 1;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 4px #0000004D;
+    
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+figcaption {
+    margin-bottom: 1em;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        flex-basis: 40%;
+    }
+}

@@ -1,0 +1,23 @@
+/* footer section */
+
+.grid-footer {
+    grid-area: footer;
+    background-color: #9e2929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #eceff1;
+    font-size: large;
+    
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.icon-container img {
+    height: 40px;
+    padding-bottom: 3em;
+}
+
